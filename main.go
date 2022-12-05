@@ -57,7 +57,7 @@ func pushMessage(client http.Client) {
 			panic(err)
 		}
 		msgRequest.Header.Add("Content-Type", "application/json")
-		//client.Do(msgRequest)
+		client.Do(msgRequest)
 	}
 }
 
