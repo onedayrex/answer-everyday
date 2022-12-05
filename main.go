@@ -22,9 +22,9 @@ func main() {
 	}
 	phone := os.Getenv("phone")
 	login(client, phone)
-	//for i := 0; i < 4; i++ {
-	//	answerQuestion(client)
-	//}
+	for i := 0; i < 4; i++ {
+		answerQuestion(client)
+	}
 	pushMessage(client)
 }
 
